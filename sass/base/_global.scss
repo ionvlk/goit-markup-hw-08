@@ -1,0 +1,125 @@
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: $white-color #FFFFFF;
+    color: $text-color #757575;
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/teamimg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.button {
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+
+    color: $white-color;
+    background-color: $accent-color;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    }
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        padding: 12px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            .social__icon {
+                fill: $white-color;
+            }
+        }
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+        fill: $socialsymbol-color;
+        width: 20px;
+        height: 20px;
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    }
+
